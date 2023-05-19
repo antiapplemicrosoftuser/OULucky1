@@ -1,0 +1,14 @@
+table {
+    border-collapse:  collapse; /* セルの線を重ねる */
+}
+ 
+tr:nth-child(odd) {
+    background-color:  #05057d;    /* 背景色指定 */
+}
+tr:nth-child(even) {
+    background-color:  #7684cc;    /* 背景色指定 */
+}
+ 
+th,td {
+    padding: 10px;          /* 余白指定 */
+}
