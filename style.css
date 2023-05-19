@@ -4,13 +4,12 @@ table {
  
 tr:nth-child(odd) {
     background-color:  #05057d;    /* 背景色指定 */
-    color: #FFFFFF;
 }
 tr:nth-child(even) {
     background-color:  #4a61d1;    /* 背景色指定 */
-    color: #FFFFFF;
 }
  
 th,td {
     padding: 10px;          /* 余白指定 */
+    color: #FFFFFF;
 }
