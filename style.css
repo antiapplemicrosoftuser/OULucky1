@@ -4,9 +4,11 @@ table {
  
 tr:nth-child(odd) {
     background-color:  #05057d;    /* 背景色指定 */
+    color: #FFFFFF;
 }
 tr:nth-child(even) {
-    background-color:  #7684cc;    /* 背景色指定 */
+    background-color:  #4a61d1;    /* 背景色指定 */
+    color: #FFFFFF;
 }
  
 th,td {
