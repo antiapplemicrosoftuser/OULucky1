@@ -1,20 +1,95 @@
-body{
+body {
     font-family: 'Noto Serif JP', sans-serif;
     background-color: #000000;
     color: #FFFFFF;
 }
+
 table {
-    border-collapse:  collapse; /* セルの線を重ねる */
-}
- 
-tr:nth-child(odd) {
-    background-color:  #05057d;    /* 背景色指定 */
-}
-tr:nth-child(even) {
-    background-color:  #4a61d1;    /* 背景色指定 */
+    border-collapse: collapse;
+    /* セルの線を重ねる */
 }
 
-th,td {
-    padding: 50px;          /* 余白指定 */
+tr:nth-child(odd) {
+    background-color: #05057d;
+    /* 背景色指定 */
+}
+
+tr:nth-child(even) {
+    background-color: #4a61d1;
+    /* 背景色指定 */
+}
+
+th,
+td {
+    padding: 30px;
+    /* 余白指定 */
     color: #FFFFFF;
+}
+
+th {
+    font-size: 25px;
+}
+
+td {
+    font-size: 20px;
+}
+
+#g_navi {
+    background: #2e1200;
+}
+
+#g_navi ul {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 3%;
+    width: 94%;
+    max-width: 1800px;
+    list-style-type: none;
+}
+
+#g_navi ul h1 {
+    position: relative;
+    width: 40%;
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+#g_navi ul li {
+    position: relative;
+    width: 15%;
+    vertical-align: middle;
+}
+
+#g_navi ul li:first-child::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 25%;
+    left: 0px;
+    width: 1px;
+    height: 50%;
+    background-color: #976d52;
+}
+
+#g_navi ul li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 25%;
+    right: 0px;
+    width: 1px;
+    height: 50%;
+    background-color: #976d52;
+}
+
+#g_navi ul li a {
+    display: block;
+    padding: 17px 10px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+#g_navi ul li a:hover {
+    background-color: #472108;
 }
