@@ -1,3 +1,8 @@
+body{
+    font-family: 'Noto Serif JP', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+}
 table {
     border-collapse:  collapse; /* セルの線を重ねる */
 }
@@ -8,8 +13,8 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
     background-color:  #4a61d1;    /* 背景色指定 */
 }
- 
+
 th,td {
-    padding: 10px;          /* 余白指定 */
+    padding: 50px;          /* 余白指定 */
     color: #FFFFFF;
 }
