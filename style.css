@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
 body {
+    padding-top: 90px;
     font-family: 'Noto Serif JP', sans-serif;
     background-color: #000000;
     color: #FFFFFF;
@@ -35,7 +37,6 @@ td {
 }
 
 #g_navi {
-    background: #2e1200;
 }
 
 #g_navi ul {
@@ -45,19 +46,23 @@ td {
     width: 94%;
     max-width: 1800px;
     list-style-type: none;
+    align-items: center;
+    background: rgba(46, 18, 0, 0.8);
+    align-items: center;
+    position: fixed;
+    top: 0px;
 }
 
 #g_navi ul h1 {
     position: relative;
     width: 40%;
     font-size: 35px;
-    vertical-align: middle;
 }
 
 #g_navi ul li {
     position: relative;
     width: 15%;
-    vertical-align: middle;
+    font-size: 20px;
 }
 
 #g_navi ul li:first-child::before {
@@ -91,5 +96,5 @@ td {
 }
 
 #g_navi ul li a:hover {
-    background-color: #472108;
+    background-color: rgba(118, 58, 18, 0.5);
 }
