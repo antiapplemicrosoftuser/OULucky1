@@ -12,12 +12,12 @@ table {
 }
 
 tr:nth-child(odd) {
-    background-color: #05057d;
+    background-color: #191957;
     /* 背景色指定 */
 }
 
 tr:nth-child(even) {
-    background-color: #4a61d1;
+    background-color: #263375;
     /* 背景色指定 */
 }
 
@@ -97,4 +97,33 @@ td {
 
 #g_navi ul li a:hover {
     background-color: rgba(118, 58, 18, 0.5);
+}
+#rank_navi table tbody tr th {
+    font-size: 60px;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+}
+.Gold{
+    color: #c9ac49;
+    background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+}
+.Silver{
+    color: #b2b2b2;;
+    background: linear-gradient(45deg, #757575 0%, #9E9E9E 45%, #E8E8E8 70%, #9E9E9E 85%, #757575 90% 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+}
+.Bronze{
+    color: #ce6c34;
+    background: linear-gradient(45deg, #9c4507 0%, #bd5e28 45%, #e3996e 70%, #e18c46 85%, #984509 90% 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+}
+.White{
+    color: #ffffff;
+}
+.Worst{
+    color: #000000;
 }
