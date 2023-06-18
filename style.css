@@ -3,7 +3,7 @@ body {
     padding-top: 90px;
     font-family: 'Noto Serif JP', sans-serif;
     background-color: #000000;
-    color: #FFFFFF;
+    color: #dbdbdb;
 }
 
 table {
@@ -32,7 +32,7 @@ th,
 td {
     padding: 30px;
     /* 余白指定 */
-    color: #FFFFFF;
+    color: #dbdbdb;
 }
 
 th {
@@ -41,9 +41,6 @@ th {
 
 td {
     font-size: 20px;
-}
-
-#g_navi {
 }
 
 #g_navi ul {
@@ -97,7 +94,7 @@ td {
 #g_navi ul li a {
     display: block;
     padding: 17px 10px;
-    color: #fff;
+    color: #dbdbdb;
     text-align: center;
     text-decoration: none;
 }
@@ -129,7 +126,7 @@ td {
     -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
 }
 .White{
-    color: #ffffff;
+    color: #dbdbdb;
 }
 .Worst{
     color: #000000;
@@ -150,4 +147,15 @@ td {
     /* 背景色指定 */
 }
 
+.LuckyItem {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    color: #9d9d9d;
+}
+#Title {
+    font-size: 50px;
+    color: #bf9d6c;
+    font-family: "HG正楷書体-PRO";
+}
 

@@ -11,13 +11,22 @@ const JE = ["J", "E"];
 const className = ["jpn", "eng"];
 
 function viewConstellation() {
+    var id, objP;
+    var today = new Date();
+    id = "Title";
+    objP = document.getElementById(id);
+    objP.innerText = today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日の運勢はこちら!";
     for (var i = 0; i < 12; i++){
         for (var j = 0; j < 2; j++){
-            var id = orderString[i] + JE[j];
-            var objP = document.getElementById(id);
+            id = orderString[i] + JE[j];
+            objP = document.getElementById(id);
             objP.innerText = constellation[i][j];
             objP.className = className[j];
         }
+        id = orderString[i] + "LI";
+        objP = document.getElementById(id);
+        objP.innerText = "Lucky Item: " + "傘";
+        objP.className = "LuckyItem";
         var objB = document.getElementById("rank_" + String(i + 1));
         if (i%2 === 0){
             objB.style["background-image"] = "linear-gradient(rgba(25, 25, 87, 0.9), rgba(25, 25, 87, 0.9)), url(images/" + constellation[i][1] + ".png)";
