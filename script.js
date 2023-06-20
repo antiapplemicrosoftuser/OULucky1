@@ -37,7 +37,9 @@ function setupPage() {
                 viewConstellation();
             } else {
                 alert("status = " + xmlhttp.status);
-            } 
+            }
+        } else {
+            alert("readyState = " + xmlhttp.readyState);
         }
     };
 }
