@@ -38,8 +38,6 @@ function setupPage() {
             } else {
                 alert("status = " + xmlhttp.status);
             }
-        } else {
-            alert("readyState = " + xmlhttp.readyState);
         }
     };
 }
