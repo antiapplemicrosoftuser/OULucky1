@@ -14,17 +14,22 @@ const JE = ["J", "E"];
 const className = ["jpn", "eng"];
 
 function setupPage() {
-    today = new Date();
+    // today = new Date();
     id = "Title";
     objP = document.getElementById(id);
-    objP.innerText = today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日の運勢はこちら!";
+    // objP.innerText = today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日の運勢はこちら!";
+    objP.innerText = "今日の運勢はこちら!";
+
+    /*
     if (today.getMonth() + 1 < 10){
         filename = today.getFullYear() + "-0" + (today.getMonth() + 1) + "-" + today.getDate() + ".json";
     } else {
         filename = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate() + ".json";
     }
+    */
+   
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", filename);
+    xmlhttp.open("GET", "2023-06-21.json");
     xmlhttp.setRequestHeader( 'content-type', 'application/json;charset=UTF-8' );
     // xmlhttp.responseType = "json";
     xmlhttp.send();
