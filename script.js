@@ -1,13 +1,4 @@
-/*
-Array.prototype.shuffle = function () {
-    this.sort(() => Math.random() - 0.5);
-}
-*/
-
-// const constellation = [["牡羊座", "Aries"], ["牡牛座", "Taurus"], ["双子座", "Gemini"], ["蟹座", "Cancer"], ["獅子座", "Leo"], ["乙女座", "Virgo"], ["天秤座", "Libra"], ["蠍座", "Scorpio"], ["射手座", "Sagittarius"], ["山羊座", "Capricorn"], ["水瓶座", "Aquarius"], ["魚座", "Pisces"]];
-// constellation.shuffle();
-
-let constellation, luckyItem, data, id, objP;
+let constellation, luckyItem, data, id, objP, year, month, day;
 
 const orderString = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th"];
 const JE = ["J", "E"];
@@ -15,10 +6,6 @@ const className = ["jpn", "eng"];
 
 function setupPage() {
     // today = new Date();
-    id = "Title";
-    objP = document.getElementById(id);
-    // objP.innerText = today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日の運勢はこちら!";
-    objP.innerText = "今日の運勢はこちら!";
 
     /*
     if (today.getMonth() + 1 < 10){
@@ -29,7 +16,7 @@ function setupPage() {
     */
    
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "2023-06-21.json");
+    xmlhttp.open("GET", "TodayLucks.json");
     xmlhttp.setRequestHeader( 'content-type', 'application/json;charset=UTF-8' );
     // xmlhttp.responseType = "json";
     xmlhttp.send();
@@ -39,6 +26,9 @@ function setupPage() {
                 data = JSON.parse(xmlhttp.responseText);
                 constellation = data.constellation;
                 luckyItem = data.luckyItem;
+                year = data.year
+                month = data.month
+                day = data.day
                 viewConstellation();
             } else {
                 alert("status = " + xmlhttp.status);
@@ -47,6 +37,10 @@ function setupPage() {
     };
 }
 function viewConstellation(){
+    id = "Title";
+    objP = document.getElementById(id);
+    objP.innerText = year + "年" + month + "月" + day + "日の運勢はこちら!";
+    // objP.innerText = "今日の運勢はこちら!";
     for (var i = 0; i < 12; i++){
         for (var j = 0; j < 2; j++){
             id = orderString[i] + JE[j];
