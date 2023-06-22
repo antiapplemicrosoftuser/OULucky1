@@ -9,7 +9,7 @@
 </head>
 <p>
 <nav id="g_navi">
-    <ul>
+    <ul id="menuBar">
         <h1>大阪大学今日の運勢サークル</h1>
         <li><a href="">Twitter</a></li>
         <li><a href="">敵</a></li>
@@ -19,7 +19,7 @@
 </nav>
 </p>
 
-<body onload="setupPage()">
+<body onload="setupPage()" onresize="resizePadding()" id="body">
     <h1 id="Title"></h1>
     <nav id="rank_navi">
         <table>

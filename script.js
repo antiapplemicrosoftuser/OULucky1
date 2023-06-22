@@ -14,7 +14,13 @@ function setupPage() {
         filename = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate() + ".json";
     }
     */
-   
+    
+    
+    let menuBarheight = Math.trunc(document.getElementById("menuBar").clientHeight * 0.9);
+    let objBody = document.body;
+    objBody.style.paddingTop = menuBarheight + "px";
+    
+
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", "TodayLucks.json");
     xmlhttp.setRequestHeader( 'content-type', 'application/json;charset=UTF-8' );
@@ -61,4 +67,9 @@ function viewConstellation(){
             objB.style["background-position"] = "50% 50%";
         }
     }
+}
+function resizePadding(){
+    let menuBarheight = Math.trunc(document.getElementById("menuBar").clientHeight * 0.9);
+    let objBody = document.body;
+    objBody.style.paddingTop = menuBarheight + "px";
 }
