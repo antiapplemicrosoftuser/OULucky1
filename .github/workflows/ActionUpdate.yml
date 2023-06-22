@@ -2,7 +2,7 @@ name: ActionUpdate # GitHub Actionsにつける名前。任意で良い。
 
 on:
   schedule:
-    - cron: '28 * * * *' # cronで定期実行
+    - cron: '38 * * * *' # cronで定期実行
 
 jobs:
   build:
