@@ -2,7 +2,7 @@ name: ActionUpdate # GitHub Actionsにつける名前。任意で良い。
 
 on:
   schedule:
-    - cron: '1 0 * * *' # cronで定期実行
+    - cron: '25 3 * * *' # cronで定期実行
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
       - name: Setup python # ワークフローのセクションごとに設定する名前。特に設定する必要はないが、どこでエラーが起きているかを把握する為にも設定しておいた方が良い。
         uses: actions/setup-python@v2 # Pythonのセットアップ
         with:
-          python-version: "3.9.5" # Pythonのバージョン指定
+          python-version: "3.9" # Pythonのバージョン指定
 
       - name: Run ActionScript.py # Pythonファイルの実行
         run: |
