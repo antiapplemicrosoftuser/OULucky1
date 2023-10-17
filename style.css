@@ -22,7 +22,6 @@ tr:nth-child(odd) {
 }
 
 
-
 tr:nth-child(even) {
     background-color: #263375;
     /* 背景色指定 */
@@ -143,10 +142,7 @@ td {
     font-style: italic;
 }
 
-.Aries {
-    background-image: url(testImage.jpg);
-    /* 背景色指定 */
-}
+
 
 .LuckyItem {
     font-family: 'Noto Serif JP', sans-serif;
@@ -158,5 +154,15 @@ td {
     font-size: 50px;
     color: #bf9d6c;
     font-family: "HG正楷書体-PRO";
+}
+
+#citeName{
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.archiveLink{
+    color: #8cb4d9;
+    font-size: 25px;
 }
 

@@ -6,16 +6,6 @@ const className = ["jpn", "eng"];
 
 // ランキングページの表示
 function setupPage() {
-    // today = new Date();
-
-    /*
-    if (today.getMonth() + 1 < 10){
-        filename = today.getFullYear() + "-0" + (today.getMonth() + 1) + "-" + today.getDate() + ".json";
-    } else {
-        filename = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate() + ".json";
-    }
-    */
-    
     
     let menuBarheight = Math.trunc(document.getElementById("menuBar").clientHeight * 0.9);
     let objBody = document.body;
@@ -23,7 +13,7 @@ function setupPage() {
     
 
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "TodayLucks.json");
+    xmlhttp.open("GET", "2023-07-23.json");
     xmlhttp.setRequestHeader( 'content-type', 'application/json;charset=UTF-8' );
     // xmlhttp.responseType = "json";
     xmlhttp.send();
@@ -61,10 +51,10 @@ function viewConstellation(){
         objP.className = "LuckyItem";
         var objB = document.getElementById("rank_" + String(i + 1));
         if (i%2 === 0){
-            objB.style["background-image"] = "linear-gradient(rgba(25, 25, 87, 0.9), rgba(25, 25, 87, 0.9)), url(images/" + constellation[i][1] + ".png)";
+            objB.style["background-image"] = "linear-gradient(rgba(25, 25, 87, 0.9), rgba(25, 25, 87, 0.9)), url(../images/" + constellation[i][1] + ".png)";
             objB.style["background-position"] = "50% 50%";
         } else{
-            objB.style["background-image"] = "linear-gradient(rgba(38, 51, 117, 0.9), rgba(38, 51, 117, 0.9)), url(images/" + constellation[i][1] + ".png)";
+            objB.style["background-image"] = "linear-gradient(rgba(38, 51, 117, 0.9), rgba(38, 51, 117, 0.9)), url(../images/" + constellation[i][1] + ".png)";
             objB.style["background-position"] = "50% 50%";
         }
     }
@@ -77,4 +67,3 @@ function resizePadding(){
     objBody.style.paddingTop = menuBarheight + "px";
 }
 
-// アーカイブページの生成
